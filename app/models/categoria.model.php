@@ -50,6 +50,20 @@ class EquipoModel {
         return $equipos;
     }
 
+    public function getEquiposAscByEstadio() {
+        $query = $this->db->prepare("SELECT a.id_equipo,nombre,estadio, b.name_categoria FROM equipos a INNER JOIN categorias b ON a.id_categoria = b.id_categoria ORDER BY estadio ASC;");       
+        $query->execute();
+        $equipos = $query->fetchAll(PDO::FETCH_OBJ);
+        return $equipos;
+    }
+
+    public function getEquiposDescByEstadio() {
+        $query = $this->db->prepare("SELECT a.id_equipo,nombre,estadio, b.name_categoria FROM equipos a INNER JOIN categorias b ON a.id_categoria = b.id_categoria ORDER BY estadio DESC;");       
+        $query->execute();
+        $equipos = $query->fetchAll(PDO::FETCH_OBJ);
+        return $equipos;
+    }
+
     // Devuelve un equipo seleccionado por su id
     public function get($id) {
         $query = $this->db->prepare("SELECT a.id_equipo,nombre,estadio, b.name_categoria FROM equipos a INNER JOIN categorias b ON a.id_categoria = b.id_categoria WHERE a.id_equipo = ?;");

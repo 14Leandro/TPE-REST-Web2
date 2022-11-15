@@ -21,7 +21,7 @@ Nota: Si se agrega un id numérico, la consulta devuelve el detalle del equipo q
 ###  PARAMETROS
 Los parámetros disponibles y opcionales para acceder a consultas de la API son los siguientes:
 
-- **sort** indica que los resultados serán visualizados de forma ordenada por el campo que sea especificado por el usuario. Se debe ingresar en formato minúsculas o mayúscula la palabra **equipos** coincidir exactamente con el nombre de una columna de la tabla del ***equipo*** en la base de datos. De lo contrario la consulta arroja un error.
+- **sort** indica que los resultados serán visualizados de forma ordenada por el campo que sea especificado por el usuario. Se debe ingresar en formato minúsculas o mayúscula la palabra "equipo" o "nombre" coincidir exactamente con el nombre de una columna de la tabla del ***equipo*** en la base de datos. De lo contrario la consulta arroja un error.
 Se utiliza combinado con el valor del parámetro **order**.
 - **order** especifica si los resultados se muestran en orden ascendente o descendente. Puede tomar solamente los valores en minúscula *asc* y *desc* o en mayúscula *ASC* y *DESC*.
 

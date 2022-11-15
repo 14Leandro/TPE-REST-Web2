@@ -23,7 +23,7 @@ class EquipoApiController {
     public function getEquipos($params = null) {
         // Verifica existen las variables sort y order
         if (isset($_GET['order']) && isset($_GET['sort'])) {
-            // Si la variable es id ordena byId
+            // Ordena por el id del equipo
             if ($_GET['sort'] == "id" || $_GET['sort'] == "ID") {
                 // Verifica si es ASC
                 if ($_GET['order'] == "asc" || $_GET['order'] == "ASC") {
@@ -36,7 +36,7 @@ class EquipoApiController {
                     $this->view->response($equipos);
                 }
             }
-
+            // Ordena por nombre del equipo
             if ($_GET['sort'] == "nombre" || $_GET['sort'] == "equipo") {
                 // Verifica si es ASC
                 if ($_GET['order'] == "asc" || $_GET['order'] == "ASC") {
@@ -46,6 +46,19 @@ class EquipoApiController {
             // Sino ordena DESC
             else if ($_GET['order'] == "desc" || $_GET['order'] == "DESC") {
                     $equipos = $this->model->getEquiposDescByNombre();
+                    $this->view->response($equipos, 200);
+                }
+            }
+            // Ordena por el campo "estadio"
+            if ($_GET['sort'] == "estadio") {
+                // Verifica si es ASC
+                if ($_GET['order'] == "asc" || $_GET['order'] == "ASC") {
+                    $equipos = $this->model->getEquiposAscByEstadio();
+                    $this->view->response($equipos);
+            }
+            // Sino ordena DESC
+            else if ($_GET['order'] == "desc" || $_GET['order'] == "DESC") {
+                    $equipos = $this->model->getEquiposDescByEstadio();
                     $this->view->response($equipos, 200);
                 }
             }
