@@ -56,9 +56,12 @@ Ejemplo de una consulta GET sobre el recurso ***equipos*** con id = 50
 Nota: En el caso de no especificar un id, se obtendrá la lista de equipos completa.
 
 ```
-Ejemplo de una consulta GET sobre el recurso ***equipos*** con **sort** y **order**
+Ejemplos de una consulta GET sobre el recurso ***equipos*** con **sort** y **order**
 
 - /equipos?sort=estadio&order=desc
+- /equipos?sort=equipo&order=asc
+- /equipos?sort=categoria&order=ASC
+- /equipos?sort=nombre&order=DESC
 
 ##### Metodo POST
 
