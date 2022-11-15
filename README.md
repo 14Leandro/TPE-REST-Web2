@@ -96,6 +96,11 @@ Ejemplo de método DELETE que elimina el registro id= 52 del recurso ***equipos*
 http://localhost/TPE-Rest-main/api/equipos/52
 ```
 
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
 ###  RESULTADOS / ERRORES
 
 Al finalizar una accion con la API exitosamente, la misma devuelve el registro creado/eliminado o una colección de registros según corresponda.
