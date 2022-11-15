@@ -58,11 +58,7 @@ Nota: En el caso de no especificar un id, se obtendrá la lista de equipos compl
 ```
 Ejemplo de una consulta GET sobre el recurso ***equipos*** con **sort** y **order**
 
-```
-/equipos?sort=estadio&order=desc
-
-```
-
+- /equipos?sort=estadio&order=desc
 
 ##### Metodo POST
 
