@@ -69,9 +69,9 @@ Ejemplo de método POST sobre el recurso ***equipos***.
     "id_categoria": "88"
 }
 ```
-
+```
 Los id de cada ***categoria*** son:
-
+```
 ```
 {
     "id_categoria": "78" = "name_categoria":"Bundesliga";
