@@ -100,6 +100,10 @@ http://localhost/TPE-Rest-main/api/equipos/52
 
 Al finalizar una accion con la API exitosamente, la misma devuelve el registro creado/eliminado o una colección de registros según corresponda.
 
+Ejemplo de GET realizazo correctamente:
+
+- Código de respuesta 200: "OK"
+
 Ejemplo de creación de un equipo:
 
 - Código de respuesta 201: "Created"
