@@ -151,9 +151,4 @@ class EquipoApiController {
             $this->view->response("El equipo con el id= $id no existe", 404);
     }
 
-
-
-
-
-
 }
