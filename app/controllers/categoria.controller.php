@@ -49,7 +49,7 @@ class EquipoApiController {
                     $this->view->response($equipos, 200);
                 }
             }
-            // Ordena por el campo "estadio"
+            // Ordena por el campo estadio
             if ($_GET['sort'] == "estadio") {
                 // Verifica si es ASC
                 if ($_GET['order'] == "asc" || $_GET['order'] == "ASC") {
@@ -59,6 +59,19 @@ class EquipoApiController {
             // Sino ordena DESC
             else if ($_GET['order'] == "desc" || $_GET['order'] == "DESC") {
                     $equipos = $this->model->getEquiposDescByEstadio();
+                    $this->view->response($equipos, 200);
+                }
+            }
+            // Ordena por nombre de la categoria
+            if ($_GET['sort'] == "categoria") {
+                // Verifica si es ASC
+                if ($_GET['order'] == "asc" || $_GET['order'] == "ASC") {
+                    $equipos = $this->model->getEquiposAscByCategoria();
+                    $this->view->response($equipos);
+            }
+            // Sino ordena DESC
+            else if ($_GET['order'] == "desc" || $_GET['order'] == "DESC") {
+                    $equipos = $this->model->getEquiposDescByCategoria();
                     $this->view->response($equipos, 200);
                 }
             }
