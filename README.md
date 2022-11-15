@@ -56,6 +56,14 @@ Ejemplo de una consulta GET sobre el recurso ***equipos*** con id = 50
 Nota: En el caso de no especificar un id, se obtendrá la lista de equipos completa.
 
 ```
+Ejemplo de una consulta GET sobre el recurso ***equipos*** con **sort** y **order**
+
+```
+/equipos?sort=estadio&order=desc
+
+```
+
+
 ##### Metodo POST
 
 Para agregar un equipo con el método POST, se debe especificar la siguiente información en formato JSON:
