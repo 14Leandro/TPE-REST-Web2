@@ -17,6 +17,7 @@ Actualmente están disponibles para consulta mediante nuestra API los siguientes
 ```
 Nota: Si se agrega un id numérico, la consulta devuelve el detalle del equipo que coincide con el id indicado.
 
+```
 ###  PARAMETROS
 Los parámetros disponibles y opcionales para acceder a consultas de la API son los siguientes:
 
