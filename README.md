@@ -6,7 +6,7 @@ Esta es una API RESTful vinculada a la base de datos del TPE (1° Entrega), most
 ###  URL
 Accesible mediante la dirección web http://localhost/TPE-Rest-main/api/equipos/
 
-- Opcionalmente se puede especificar a continuación el id de un recurso en particular con el siguiente formato:
+- Opcionalmente se puede especificar a continuación el id de un equipo en particular con el siguiente formato:
 http://localhost/TPE-Rest-main/api/equipos/id
 
 ###  RECURSOS
@@ -70,9 +70,9 @@ Ejemplo de método POST sobre el recurso ***equipos***.
     "id_categoria": "88"
 }
 ```
-```
+
 Los id de cada ***categoria*** son:
-```
+
 ```
 {
     "id_categoria": "78" = "name_categoria":"Bundesliga";
@@ -88,7 +88,7 @@ Los id de cada ***categoria*** son:
 ```
 ##### Metodo DELETE
 
-La API permite la eliminación de un equipo, para lo cual se debe conocer el id del recurso a eliminar.
+La API permite la eliminación de un equipo, para lo cual se debe conocer el id del equipo a eliminar.
 
 Ejemplo de método DELETE que elimina el registro id= 52 del recurso ***equipos***.
 
@@ -100,6 +100,20 @@ http://localhost/TPE-Rest-main/api/equipos/52
 
 Al finalizar una accion con la API exitosamente, la misma devuelve el registro creado/eliminado o una colección de registros según corresponda.
 
+Ejemplo de creación de un equipo:
+
+- Código de respuesta 201: "Created"
+
 Ejemplo de error en la consulta:
 
 - Código de respuesta 404: "El equipo con el id = 29 no existe"
+
+Ejemplo de error en al crear un equipo:
+
+- Código de respuesta 400: "Complete los datos"
+
+Ejemplo de error en al pasar los params **sort** y **order**:
+
+- Código de respuesta 400: "Valor de variables incorrecto"
+
+- Código de respuesta 400: "Error en la consulta"

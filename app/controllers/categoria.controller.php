@@ -50,7 +50,7 @@ class EquipoApiController {
                 }
             }
             else{
-                $this->view->response("Valor de variables incorrecto", 400);
+                $this->view->response("Valor de parametros incorrecto", 400);
             }
         }
         // Sino tiene sort u order muestra normal
