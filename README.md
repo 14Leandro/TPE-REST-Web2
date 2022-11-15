@@ -96,10 +96,12 @@ Ejemplo de método DELETE que elimina el registro id= 52 del recurso ***equipos*
 http://localhost/TPE-Rest-main/api/equipos/52
 ```
 
-| Left-aligned | Center-aligned | Right-aligned |
+| Method | Url | Code |
 | :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| GET  | /equipos    | 200   |
+| GET    | /equipos/:id      | 200     |
+| POST    | /equipos     | 201     |
+| DELETE    | /equipos/:id     | 200     |
 
 ###  RESULTADOS / ERRORES
 
