@@ -53,7 +53,7 @@ Ejemplo de una consulta GET sobre el recurso ***equipos*** con id = 50
 }
 ```
 ```
-Nota: En el caso de no especificar un id, se obtendrá la colección de recursos completa.
+Nota: En el caso de no especificar un id, se obtendrá la lista de equipos completa.
 
 ```
 ##### Metodo POST
